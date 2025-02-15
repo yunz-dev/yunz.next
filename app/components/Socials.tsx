@@ -4,25 +4,25 @@ export default function Socials() {
       <h2 className="text-3xl font-semibold mb-6">Let's Connect</h2>
       <div className="flex justify-center gap-8">
         <a
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/yunzz"
           target="_blank"
           className="text-gray-300 hover:text-gray-100"
         >
           LinkedIn
         </a>
         <a
-          href="https://github.com"
+          href="https://github.com/yunz-dev"
           target="_blank"
           className="text-gray-300 hover:text-gray-100"
         >
           GitHub
         </a>
         <a
-          href="https://twitter.com"
+          href="https://medium.com/@ynssyd0210"
           target="_blank"
           className="text-gray-300 hover:text-gray-100"
         >
-          Twitter
+          Blog
         </a>
       </div>
     </section>
