@@ -1,12 +1,14 @@
 "use client";
 import { Typewriter } from "react-simple-typewriter";
 import Link from "next/link";
+import Fade from "./Fade";
 
 export default function Hero() {
   return (
     <section className="bg-gray-800 text-white h-screen flex flex-col justify-center items-center text-center px-6">
       <div className="container mx-auto">
-        <h1 className="text-5xl font-bold mb-4">This is Yunz</h1>
+        <Fade>
+          <h1 className="text-5xl font-bold mb-4">This is Yunz</h1>
         <div className="text-3xl mb-6">
         <span>Passionate in </span>
         <Typewriter
@@ -28,6 +30,7 @@ export default function Hero() {
             See My Projects
           </Link>
         </div>
+        </Fade>
       </div>
     </section>
   );
