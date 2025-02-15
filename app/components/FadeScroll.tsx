@@ -7,7 +7,7 @@ interface FadeInOnScrollProps {
   duration?: number;
 }
 
-export default function FadeInOnScroll({ children, duration = 1 }: FadeInOnScrollProps) {
+export default function FadeInOnScroll({ children, duration = 1.5 }: FadeInOnScrollProps) {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
@@ -32,7 +32,7 @@ export default function FadeInOnScroll({ children, duration = 1 }: FadeInOnScrol
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 35 }}
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 20 }}
       transition={{ duration }}
     >
