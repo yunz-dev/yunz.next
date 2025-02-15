@@ -27,7 +27,7 @@ export default function Hero() {
             <span>Passionate in </span>
             <span className="font-bold">
               <Typewriter
-                words={["backend engineering.", "devops and cloud", "machine learning", "creating"]}
+                words={["Backend Engineering.", "Devops and Cloud", "Machine Learning", "Creation"]}
                 loop={0} // Infinite loop
                 cursor
                 cursorStyle="|"
@@ -39,7 +39,7 @@ export default function Hero() {
           </div>
           <div className="flex justify-center gap-6">
             <button
-              className="inline-block px-7 py-2 bg-gray-800 text-white rounded-lg  opacity-70 hover:opacity-100 transition"
+              className="inline-block px-8 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg  opacity-80 hover:opacity-100 transition"
               onClick={scrollToContent}
             >
               <img className="w-12 h-12 text-white" src="svg/down_arrow.svg" alt="down arrow" />
