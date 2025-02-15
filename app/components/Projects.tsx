@@ -3,7 +3,7 @@ import FadeScroll from "./FadeScroll";
 
 export default function Projects() {
   return (
-    <section className="bg-gray-800 text-white py-20" id="projects">
+    <section className="bg-gray-800 text-white pt-20 pb-10" id="projects">
       <div className="container mx-auto px-6 text-center">
         <FadeScroll>
           <h2 className="text-3xl font-semibold mb-6">My Projects</h2>
@@ -39,6 +39,10 @@ export default function Projects() {
               </Link>
             </div>
           </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          For more projects checkout my <a className="underline" href="https://github.com/yunz-dev" target="_blank">Github</a>
         </FadeScroll>
       </div>
     </section>
