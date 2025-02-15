@@ -4,6 +4,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import OpenSource from "./components/OpenSource";
 import Socials from "./components/Socials";
+import { InfiniteSlider } from "./components/Slider";
 
 export default function Home() {
   return (
@@ -19,6 +20,8 @@ export default function Home() {
 
       {/* Open Source Contributions Section */}
       <OpenSource />
+
+      <InfiniteSlider/ >
 
       {/* Social Media Section */}
       <Socials />
