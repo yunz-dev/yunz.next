@@ -8,7 +8,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative bg-gray-800 text-white h-screen flex flex-col justify-center items-center text-center px-6">
+    <section className="relative bg-black text-white h-screen flex flex-col justify-center items-center text-center px-6">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -24,10 +24,10 @@ export default function Hero() {
         <Fade>
           <h1 className="text-5xl font-bold mb-4">This is Yunz</h1>
           <div className="text-3xl mb-6">
-            <span>Passionate in </span>
+            <span>Empowering through </span>
             <span className="font-bold">
               <Typewriter
-                words={["Backend Engineering.", "Devops and Cloud", "Machine Learning", "Creation"]}
+                words={["Backend Engineering", "Devops and Cloud", "Machine Learning"]}
                 loop={0} // Infinite loop
                 cursor
                 cursorStyle="|"
@@ -39,7 +39,7 @@ export default function Hero() {
           </div>
           <div className="flex justify-center gap-6">
             <button
-              className="inline-block px-8 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg  opacity-80 hover:opacity-100 transition"
+              className="inline-block px-8 py-2 bg-gray-900 hover:bg-gray-800 text-white rounded-lg  opacity-80 hover:opacity-80 transition"
               onClick={scrollToContent}
             >
               <img className="w-12 h-12 text-white" src="svg/down_arrow.svg" alt="down arrow" />
