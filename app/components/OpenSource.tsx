@@ -9,33 +9,33 @@ export default function OpenSource() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
           <div className="bg-gray-600 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Open Source 1</h3>
-            <p className="mb-4">Brief description of contribution to open source project 1.</p>
+            <h3 className="text-xl font-semibold mb-2">Golio</h3>
+            <p className="mb-4">League of Legends, Legends of Runeterra and Valorant API client library for Go. </p>
             <Link
-              href="#"
+              href="https://github.com/KnutZuidema/golio"
               className="inline-block text-gray-300 hover:underline"
             >
-              View Contribution
+              View Source
             </Link>
           </div>
           <div className="bg-gray-600 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Open Source 2</h3>
-            <p className="mb-4">Brief description of contribution to open source project 2.</p>
+            <h3 className="text-xl font-semibold mb-2">Bunster</h3>
+            <p className="mb-4">A shell compiler that converts shell scripts into secure, portable and static binaries.</p>
             <Link
-              href="#"
+              href="https://github.com/yassinebenaid/bunster"
               className="inline-block text-gray-300 hover:underline"
             >
-              View Contribution
+              View Source
             </Link>
           </div>
           <div className="bg-gray-600 p-6 rounded-lg shadow-md">
-            <h3 className="text-xl font-semibold mb-2">Open Source 3</h3>
-            <p className="mb-4">Brief description of contribution to open source project 3.</p>
+            <h3 className="text-xl font-semibold mb-2">Nix Packages</h3>
+            <p className="mb-4">Nixpkgs is a collection of over 100,000 software packages that can be installed with the Nix package manager.</p>
             <Link
-              href="#"
+              href="https://github.com/NixOS/nixpkgs"
               className="inline-block text-gray-300 hover:underline"
             >
-              View Contribution
+              View Source
             </Link>
           </div>
         </div>
