@@ -8,7 +8,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative bg-gray-800 text-white h-screen flex flex-col justify-center items-center text-center px-6">
+    <section className="relative bg-black text-white h-screen flex flex-col justify-center items-center text-center px-6">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
