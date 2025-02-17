@@ -1,15 +1,25 @@
 "use client";
 import { useState } from "react";
+import { redirect } from "next/navigation";
 import { delay } from "framer-motion";
 export default function Fun() {
+  console.log('%cOh, Hello There Traveller', 'font-size: 80px; font-family: "Comic Sans MS"; font-weight: bold; background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); -webkit-background-clip: text; color: transparent;');
+
   const [title, setTitle] = useState("Fun Page");
+  const [hasegi, setHasegi] = useState(0)
 
   const spinHandler = async () => {
-    setTitle("HASEGI!!!")
+    setTitle("🌪️HASEGI🌪️")
+    setHasegi(hasegi + 1);
+    if (hasegi == 10) {
+      redirect("/images/hasegi.jpg");
+    }
     document.body.style.transition = 'all 1s';
     document.body.style.transform = 'rotate(360deg)';
     delay( () => {
-      location.reload()
+      document.body.style.transition = '';
+      document.body.style.transform = '';
+      setTitle("Fun Page")
     }, 2000);
   };
 
