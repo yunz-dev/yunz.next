@@ -8,18 +8,22 @@ import { InfiniteSlider } from "./components/Slider";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100">
+    <div className="min-h-screen bg-black text-gray-100">
       {/* Hero Section - Full Screen */}
       <Hero />
 
       {/* About Section */}
       <About />
+      <hr className="w-4/5 mx-auto my-4 h-1 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0"></hr>
+
 
       {/* Projects Section */}
       <Projects />
+      <hr className="w-4/5 mx-auto my-4 h-1 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0"></hr>
 
       {/* Open Source Contributions Section */}
       <OpenSource />
+      <hr className="w-4/5 mx-auto my-4 h-1 bg-gradient-to-r from-transparent via-gray-500 to-transparent border-0"></hr>
 
       <InfiniteSlider/ >
 
