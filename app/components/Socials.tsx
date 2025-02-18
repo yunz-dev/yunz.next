@@ -7,7 +7,7 @@ export default function Socials() {
         <h2 className="text-3xl font-semibold mb-6">Let&apos;s Connect</h2>
         <div className="flex justify-center gap-8">
           <a
-            href="https://www.linkedin.com/in/yunzz"
+            href="https://www.linkedin.com/in/yunzwastaken"
             target="_blank"
             className="text-gray-300 hover:text-gray-100"
           >
@@ -21,7 +21,7 @@ export default function Socials() {
             GitHub
           </a>
           <a
-            href="https://medium.com/@ynssyd0210"
+            href="https://yunzblogz.medium.com"
             target="_blank"
             className="text-gray-300 hover:text-gray-100"
           >

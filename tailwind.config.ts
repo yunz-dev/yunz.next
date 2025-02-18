@@ -10,13 +10,19 @@ export default {
     extend: {
       animation: {
         ["infinite-slider"]: "infiniteSlider 20s linear infinite",
+        border: 'background ease infinite',
       },
+
       keyframes: {
         infiniteSlider: {
           "0%": { transform: "translateX(0)" },
           "100%": {
             transform: "translateX(calc(-250px * 5))",
           },
+        },
+        background: {
+          '0%, 100%': { backgroundPosition: '0% 50%' },
+          '50%': { backgroundPosition: '100% 50%' },
         },
       },
       colors: {
