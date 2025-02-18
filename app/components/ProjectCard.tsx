@@ -25,8 +25,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         ))}
       </div>
       <div className="flex justify-between text-sm">
-        <Link href={project.repo} className="text-blue-400 hover:underline" target="_blank">GitHub</Link>
-        <Link href={project.live} className="text-green-400 hover:underline" target="_blank">Live Demo</Link>
+        <Link href={project.repo} className="text-blue-400 hover:underline" target="_blank">
+   <Image src="svg/github.svg" alt="logo" className="fill-white" width={25} height={25} />
+        </Link>
+        <Link href={project.live} className="text-green-400 hover:underline" target="_blank">
+   <Image src="svg/web.svg" alt="logo" className="fill-white" width={25} height={25} />
+        </Link>
       </div>
     </div>
   );
