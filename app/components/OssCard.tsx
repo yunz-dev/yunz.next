@@ -8,20 +8,21 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="bg-neutral-900 text-white p-6 rounded-2xl shadow-lg border-2 border-gray-700 transition-all duration-300 ease-in-out hover:shadow-xl hover:border-gray-200 cursor-pointer">
+    <div className="bg-gray-800 text-white p-6 rounded-2xl shadow-lg border-2 border-gray-700 transition-all duration-300 ease-in-out hover:shadow-xl hover:border-gray-200 cursor-pointer">
 
       <Image
         src={project.image}
         alt={project.title}
         width={400}
         height={250}
-        className="rounded-lg mb-4"
+        layout="intrinsic"
+        className="rounded-lg mb-4 w-full h-auto"
       />
       <h3 className="text-xl font-bold mb-2">{project.title}</h3>
       <p className="text-gray-400 mb-4">{project.description}</p>
       <div className="flex flex-wrap gap-2 mb-4">
         {project.techStack.map((tech, index) => (
-          <span key={index} className="bg-gray-800 text-xs px-3 py-1 rounded-full">{tech}</span>
+          <span key={index} className="bg-gray-900 text-xs px-3 py-1 rounded-full">{tech}</span>
         ))}
       </div>
       <div className="flex justify-between text-sm">
