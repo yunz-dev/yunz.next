@@ -1,82 +1,4 @@
-import Image from "next/image";
-
-const LOGOS = [
-
-
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-   // eslint-disable-next-line react/jsx-key
-   <Image src="svg/nix.svg" alt="logo" className="fill-white" width={130} height={130} />,
-
-];
+import {logos} from "../data/technologies"
 
 //change linear gradient to right rgba for gradient
 export const InfiniteSlider = () => {
@@ -85,7 +7,7 @@ export const InfiniteSlider = () => {
       <h2 className="text-center text-3xl font-semibold"> Technologies </h2>
       <br></br>
       <div className="animate-infinite-slider flex w-[calc(250px*50)]">
-        {LOGOS.map((logo, index) => (
+        {logos.map((logo, index) => (
           <div
             className="slide flex w-[125px] items-center justify-center"
             key={index}
@@ -93,7 +15,7 @@ export const InfiniteSlider = () => {
             {logo}
           </div>
         ))}
-        {LOGOS.map((logo, index) => (
+        {logos.map((logo, index) => (
           <div
             className="slide flex w-[125px] items-center justify-center"
             key={index}

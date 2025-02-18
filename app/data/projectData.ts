@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     id: 1,
     title: "GEDIS",
-    description: "A powerful distributed system for efficient data processing.",
+    description: "A powerful distributed system for efficient data processing.A powerful distributed system for efficient data processing.",
     techStack: ["Go"],
     repo: "https://github.com/yunz-dev/gedis",
     live: "https://gedis-demo.com",
