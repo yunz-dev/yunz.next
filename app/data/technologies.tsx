@@ -20,5 +20,12 @@ export const logos = [
    <Image src="svg/spring.svg" alt="logo" className="fill-white" width={100} height={100} />,
    <Image src="svg/tailwind.svg" alt="logo" className="fill-white" width={100} height={100} />,
    <Image src="svg/typescript.svg" alt="logo" className="fill-white" width={100} height={100} />,
+   <Image src="svg/rust.svg" alt="logo" className="fill-white" width={100} height={100} />,
+   <Image src="svg/bash.svg" alt="logo" className="fill-white" width={100} height={100} />,
+   <Image src="svg/graphql.svg" alt="logo" className="fill-white" width={100} height={100} />,
+   <Image src="svg/linux.svg" alt="logo" className="fill-white" width={100} height={100} />,
+   <Image src="svg/mongo.svg" alt="logo" className="fill-white" width={100} height={100} />,
+   <Image src="svg/pandas.svg" alt="logo" className="fill-white" width={100} height={100} />,
+   <Image src="svg/tensorflow.svg" alt="logo" className="fill-white" width={100} height={100} />,
 
 ];

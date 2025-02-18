@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "yunz.dev",
-  description: "Yunz's Site",
+  title: "This is Yunz",
+  description: "Welcome to my website! I’m a backend developer with a passion for building scalable, performant systems. I specialize in working with modern technologies like Go, Java, and Rust, and I have a strong interest in cloud platforms like AWS and Azure.",
 };
 
 export default function RootLayout({
