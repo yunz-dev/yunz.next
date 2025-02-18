@@ -27,7 +27,7 @@ export const projects: Project[] = [
     techStack: ["IN PROGRESS", "Nodejs", "Reactjs", "MongoDB", "Tailwind", "Express"],
     repo: "https://github.com/monkieeBoi/yawl",
     live: "/404",
-    image: "/images/hasegi.jpg"
+    image: "/images/github.jpg"
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     techStack: ["IN PROGRESS", "Go", "PostgreSQL", "Redis", "HTMX", "AlpineJS", "Python", "Pandas"],
     repo: "https://github.com/yunz-dev/LiMao",
     live: "/404",
-    image: "/images/hasegi.jpg"
+    image: "/images/github.jpg"
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     techStack: ["FastAPI", "MongoDB", "HTMX", "AlpineJS", "Tailwind"],
     repo: "https://github.com/yunz-dev/spnw",
     live: "https://habit.yunz.app",
-    image: "/images/hasegi.jpg"
+    image: "/images/github.jpg"
   }
 ];
 
@@ -57,7 +57,7 @@ export const oss: Project[] = [
     techStack: ["Go", "Bash"],
     repo: "https://github.com/yassinebenaid/bunster",
     live: "https://bunster.netlify.app/",
-    image: "/images/hasegi.jpg"
+    image: "/images/bunster.png"
   },
   {
     id: 2,
@@ -66,7 +66,7 @@ export const oss: Project[] = [
     techStack: ["Nix", "Linux", "Shell"],
     repo: "https://github.com/NixOS/nixpkgs",
     live: "https://search.nixos.org/packages",
-    image: "/images/hasegi.jpg"
+    image: "/images/nixpkgs.png"
   },
   {
     id: 3,
@@ -75,6 +75,6 @@ export const oss: Project[] = [
     techStack: ["Go", "API"],
     repo: "https://github.com/KnutZuidema/golio",
     live: "https://github.com/KnutZuidema/golio",
-    image: "/images/hasegi.jpg"
+    image: "/images/golio.png"
   }
 ];
