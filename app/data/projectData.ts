@@ -43,7 +43,7 @@ export const projects: Project[] = [
     title: "SPNW",
     description: "Welcome to SPNW, a modern, lightweight habit tracker designed to help you stay on top of your goals. Dynamic tracking, streak management and real time updates.",
     techStack: ["FastAPI", "MongoDB", "HTMX", "AlpineJS", "Tailwind"],
-    repo: "https://github.com/yunz-dev/spnw",
+    repo: "https://github.com/yunz-dev/spnw-api",
     live: "https://habit.yunz.app",
     image: "/images/github.jpg"
   }

@@ -28,10 +28,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
     {/* This div will be pushed to the bottom */}
     <div className="flex justify-between text-sm mt-auto">
-      <Link href={project.repo} className="text-blue-400 hover:underline" target="_blank">
+      <Link href={project.repo} className="z-10 opacity-80 text-blue-400 hover:underline" target="_blank">
         <Image src="svg/github.svg" alt="GitHub" width={25} height={25} />
       </Link>
-      <Link href={project.live} className="text-green-400 hover:underline" target="_blank">
+      <Link href={project.live} className="z-10 opacity-80 text-green-400 hover:underline" target="_blank">
         <Image src="svg/web.svg" alt="Live Demo" width={25} height={25} />
       </Link>
     </div>
