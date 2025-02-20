@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "This is Yunz",
-  description: "Welcome to my website! I’m Yunus, a backend developer with a passion for building scalable, performant systems. I specialize in working with modern technologies like Go, Java, and Rust, and I have a strong interest in cloud platforms like AWS and Azure.",
+  description: "Welcome to my website! I’m Yunus, a cs-student/backend-developer with a passion for building scalable, performant systems. I specialise in working with modern technologies like Go, Java, and Rust. I have a strong interest in cloud applications and machine learning.",
 };
 
 export default function RootLayout({

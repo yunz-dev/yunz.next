@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-  <div className="hover:bg-gray-950 text-white p-6 rounded-2xl shadow-lg border-2 border-gray-700 transition-all duration-300 ease-in-out hover:shadow-xl hover:border-gray-200 cursor-pointer flex flex-col h-full">
+  <div className="hover:bg-gray-950 text-white p-6 rounded-2xl shadow-lg border-2 border-gray-700 transition-all duration-300 ease-in-out hover:shadow-xl hover:border-gray-200  flex flex-col h-full">
 
     <Image
       src={project.image}
@@ -28,10 +28,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
     {/* This div will be pushed to the bottom */}
     <div className="flex justify-between text-sm mt-auto">
-      <Link href={project.repo} className="z-10 opacity-80 text-blue-400 hover:underline" target="_blank">
+      <Link href={project.repo} className="z-10 cursor-none opacity-80 text-blue-400 hover:underline" target="_blank">
         <Image src="svg/github.svg" alt="GitHub" width={25} height={25} />
       </Link>
-      <Link href={project.live} className="z-10 opacity-80 text-green-400 hover:underline" target="_blank">
+      <Link href={project.live} className="z-10 cursor-none opacity-80 text-green-400 hover:underline" target="_blank">
         <Image src="svg/web.svg" alt="Live Demo" width={25} height={25} />
       </Link>
     </div>

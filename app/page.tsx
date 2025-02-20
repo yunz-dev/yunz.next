@@ -4,11 +4,13 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import OpenSource from "./components/OpenSource";
 import Socials from "./components/Socials";
+import Cursor from "./components/Cursor";
 import { InfiniteSlider } from "./components/Slider";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-gray-100">
+    <Cursor />
       {/* Hero Section - Full Screen */}
       <Hero />
 

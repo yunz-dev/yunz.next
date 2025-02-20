@@ -14,7 +14,7 @@ export default function OpenSource() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {oss.map((project) => (
           <div key={project.id} className="group relative">
-            <div className="cursor-pointer relative w-full h-full bg-black rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-white/30">
+            <div className="relative w-full h-full bg-black rounded-2xl overflow-hidden shadow-lg transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-white/30">
               {/* Background blur effect */}
               <div className="absolute inset-0 bg-black opacity-40 group-hover:opacity-20 transition-opacity duration-300"></div>
 
@@ -36,7 +36,7 @@ export default function OpenSource() {
       <br />
       For contributions, check out my{" "}
       <a
-        className="underline hover:text-gray-300 transition-colors duration-200"
+        className="underline cursor-none hover:text-gray-300 transition-colors duration-200"
         href="https://github.com/yunz-dev"
         target="_blank"
       >
