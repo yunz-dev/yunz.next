@@ -5,8 +5,8 @@ const Cursor = () => {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  const springX = useSpring(x, { stiffness: 500, damping: 50 });
-  const springY = useSpring(y, { stiffness: 500, damping: 50 });
+  const springX = useSpring(x, { stiffness: 650, damping: 50 });
+  const springY = useSpring(y, { stiffness: 650, damping: 50 });
 
   const scale = useMotionValue(1);
   const background = useTransform(scale, [1, 2], ["#fff", "#fff"]);
