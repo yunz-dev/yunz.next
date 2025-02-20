@@ -9,7 +9,7 @@ import { InfiniteSlider } from "./components/Slider";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black text-gray-100">
+    <div className="min-h-screen bg-black text-gray-100 text-lg">
     <Cursor />
       {/* Hero Section - Full Screen */}
       <Hero />
