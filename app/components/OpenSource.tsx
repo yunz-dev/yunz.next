@@ -34,7 +34,7 @@ export default function OpenSource() {
       <br />
       <br />
       <br />
-      For contributions, check out my{" "}
+      For more contributions, check out my{" "}
       <a
         className="underline cursor-none hover:text-gray-300 transition-colors duration-200"
         href="https://github.com/yunz-dev"
