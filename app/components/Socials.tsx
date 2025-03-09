@@ -21,7 +21,7 @@ export default function Socials() {
             GitHub
           </a>
           <a
-            href="https://yunzblogz.medium.com"
+            href="https://yunz-dev.medium.com"
             target="_blank"
             className="text-gray-300 cursor-none hover:text-gray-100"
           >

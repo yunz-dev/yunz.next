@@ -22,10 +22,10 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "YAWL",
-    description: "YAWL is a simple, functional wishlist application where users can create and manage their wishlists. The app allows users to add, edit, and remove items from their personal wishlists.",
-    techStack: ["IN PROGRESS", "Nodejs", "Reactjs", "MongoDB", "Tailwind", "Express"],
-    repo: "https://github.com/monkieeBoi/yawl",
+    title: "PriceByte",
+    description: "PriceByte is designed to help users compare grocery prices across multiple stores, find the best deals, and make informed shopping decisions.",
+    techStack: ["SpringBoot", "Selenium", "Reactjs", "Cloud Functions", "PostgreSQL"],
+    repo: "https://github.com/yunz-dev/PriceByte",
     live: "/404",
     image: "/images/github.jpg"
   },
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     id: 2,
     title: "LiMao",
     description: "A golang powered data driven application to supplement in language learning. Dictionary via CCEDICT, AI powered SRS and Database of popular Chinese TV shows.",
-    techStack: ["IN PROGRESS", "Go", "PostgreSQL", "Redis", "HTMX", "AlpineJS", "Python", "Pandas"],
+    techStack: ["Go", "PostgreSQL", "Redis", "HTMX", "AlpineJS", "Python", "Pandas"],
     repo: "https://github.com/yunz-dev/LiMao",
     live: "/404",
     image: "/images/github.jpg"
