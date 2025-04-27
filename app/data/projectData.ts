@@ -24,19 +24,19 @@ export const projects: Project[] = [
     id: 1,
     title: "PriceByte",
     description: "PriceByte is designed to help users compare grocery prices across multiple stores, find the best deals, and make informed shopping decisions.",
-    techStack: ["SpringBoot", "Selenium", "Reactjs", "Cloud Functions", "PostgreSQL"],
+    techStack: ["SpringBoot", "Selenium", "ReactJS", "Cloud Functions", "PostgreSQL"],
     repo: "https://github.com/yunz-dev/PriceByte",
     live: "/404",
-    image: "/images/github.jpg"
+    image: "/images/pricebyte.png"
   },
   {
     id: 2,
-    title: "LiMao",
-    description: "A golang powered data driven application to supplement in language learning. Dictionary via CCEDICT, AI powered SRS and Database of popular Chinese TV shows.",
-    techStack: ["Go", "PostgreSQL", "Redis", "HTMX", "AlpineJS", "Python", "Pandas"],
+    title: "CrowdFlare",
+    description: "CrowdFlare helps UNSW students find quiet spots on campus using a real-time, interactive map. Users report busy areas ('flares'), allowing others to instantly see current crowd levels and make informed decisions about where to go.",
+    techStack: ["Go", "MongoDB", "Redis", "HTMX", "AlpineJS"],
     repo: "https://github.com/yunz-dev/LiMao",
-    live: "/404",
-    image: "/images/github.jpg"
+    live: "https://crowdflare-production.up.railway.app/",
+    image: "/images/crowdflare.png"
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     techStack: ["FastAPI", "MongoDB", "HTMX", "AlpineJS", "Tailwind"],
     repo: "https://github.com/yunz-dev/spnw-api",
     live: "https://habit.yunz.app",
-    image: "/images/github.jpg"
+    image: "/images/spnw.png"
   }
 ];
 
