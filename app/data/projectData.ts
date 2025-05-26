@@ -34,7 +34,7 @@ export const projects: Project[] = [
     title: "CrowdFlare",
     description: "CrowdFlare helps UNSW students find quiet spots on campus using a real-time, interactive map. Users report busy areas ('flares'), allowing others to instantly see current crowd levels and make informed decisions about where to go.",
     techStack: ["Go", "MongoDB", "Redis", "HTMX", "AlpineJS"],
-    repo: "https://github.com/yunz-dev/LiMao",
+    repo: "https://github.com/yunz-dev/crowdflare",
     live: "https://crowdflare-production.up.railway.app/",
     image: "/images/crowdflare.png"
   },

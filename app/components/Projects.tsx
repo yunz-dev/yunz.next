@@ -31,7 +31,7 @@ export default function Projects() {
           <br></br>
           <br></br>
           <br></br>
-          For more projects checkout my <a className="underline cursor-none" href="https://github.com/yunz-dev" target="_blank">Github</a>
+          For more projects, check out my <a className="underline cursor-none" href="https://github.com/yunz-dev" target="_blank">Github</a>
         </FadeScroll>
       </div>
     </section>
