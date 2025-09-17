@@ -15,7 +15,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       alt={project.title}
       width={400}
       height={250}
-      layout="intrinsic"
       className="rounded-lg mb-4 w-full h-auto"
     />
     <h3 className="text-xl font-bold mb-2">{project.title}</h3>

@@ -24,7 +24,7 @@ export const projects: Project[] = [
     id: 1,
     title: "PriceByte",
     description: "PriceByte is designed to help users compare grocery prices across multiple stores, find the best deals, and make informed shopping decisions.",
-    techStack: ["SpringBoot", "Selenium", "ReactJS", "Cloud Functions", "PostgreSQL"],
+    techStack: ["SpringBoot", "NextJS", "Redis", "PostgreSQL", "ChromaDB", "RabbitMQ", "ApacheSpark"],
     repo: "https://github.com/yunz-dev/PriceByte",
     live: "/404",
     image: "/images/pricebyte.png"
