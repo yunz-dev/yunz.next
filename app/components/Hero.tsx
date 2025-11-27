@@ -27,7 +27,7 @@ export default function Hero() {
             <span>Empowering through </span>
             <span className="font-bold">
               <Typewriter
-                words={["Functional Programming", "Rust :D", "Engineering"]}
+                words={["Functional Programming", "Rust :D", "High-Performance Code", "Technical Curiosity", "Scalable Design", "Open Collaboration"]}
                 loop={0} // Infinite loop
                 cursor
                 cursorStyle="|"
