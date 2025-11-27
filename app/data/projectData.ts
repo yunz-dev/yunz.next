@@ -24,9 +24,9 @@ export const projects: Project[] = [
     id: 1,
     title: "PriceByte",
     description: "PriceByte is designed to help users compare grocery prices across multiple stores, find the best deals, and make informed shopping decisions.",
-    techStack: ["SpringBoot", "NextJS", "Redis", "PostgreSQL", "ChromaDB", "RabbitMQ", "ApacheSpark"],
+    techStack: ["SpringBoot", "NextJS", "Redis", "PostgreSQL", "ChromaDB", "RabbitMQ", "Python"],
     repo: "https://github.com/yunz-dev/PriceByte",
-    live: "/404",
+    live: "https://pricebyte.yunz.app",
     image: "/images/pricebyte.png"
   },
   {
@@ -40,12 +40,12 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    title: "SPNW",
-    description: "Welcome to SPNW, a modern, lightweight habit tracker designed to help you stay on top of your goals. Dynamic tracking, streak management and real time updates.",
-    techStack: ["FastAPI", "MongoDB", "HTMX", "AlpineJS", "Tailwind"],
-    repo: "https://github.com/yunz-dev/spnw-api",
-    live: "https://habit.yunz.app",
-    image: "/images/spnw.png"
+    title: "redis but 'Brown'",
+    description: "A Redis clone written in Rust, oxidized for high performance and concurrency. This project implements a fully functional in-memory data structure store with support for various data types, commands, and high-throughput operations.",
+    techStack: ["Rust", "Threads", "Concurrency", "Database", "Performance"],
+    repo: "https://github.com/yunz-dev/redis-but-brown",
+    live: "https://github.com/yunz-dev/redis-but-brown",
+    image: "/images/redis-but-brown.jpg"
   }
 ];
 
