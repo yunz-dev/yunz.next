@@ -1,7 +1,46 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
+function useDisableFancyCursor() {
+  const [disabled, setDisabled] = useState(false);
+
+  useEffect(() => {
+    const coarse = window.matchMedia?.("(pointer: coarse)");
+    const noHover = window.matchMedia?.("(hover: none)");
+    const small = window.matchMedia?.("(max-width: 768px)");
+
+    const compute = () => {
+      const touch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+      setDisabled(
+        touch ||
+        !!coarse?.matches ||
+        !!noHover?.matches ||
+        !!small?.matches
+      );
+    };
+
+    compute();
+
+    const mqs = [coarse, noHover, small].filter(Boolean) as MediaQueryList[];
+    mqs.forEach((m) =>
+      m.addEventListener ? m.addEventListener("change", compute) : m.addListener(compute)
+    );
+    window.addEventListener("resize", compute);
+
+    return () => {
+      mqs.forEach((m) =>
+        m.removeEventListener ? m.removeEventListener("change", compute) : m.removeListener(compute)
+      );
+      window.removeEventListener("resize", compute);
+    };
+  }, []);
+
+  return disabled;
+}
 
 const Cursor = () => {
+  const disabled = useDisableFancyCursor();
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -12,18 +51,7 @@ const Cursor = () => {
   const background = useTransform(scale, [1, 2], ["#fff", "#fff"]);
 
   useEffect(() => {
-    const isTouch =
-      typeof window !== "undefined" &&
-      ("ontouchstart" in window ||
-        navigator.maxTouchPoints > 0 ||
-        // @ts-expect-error older Safari
-        navigator.msMaxTouchPoints > 0);
-
-    const isSmallScreen =
-      typeof window !== "undefined" &&
-      window.matchMedia?.("(max-width: 768px)").matches;
-
-    if (isTouch || isSmallScreen) {
+    if (disabled) {
       document.body.style.cursor = "auto";
       return;
     }
@@ -54,7 +82,7 @@ const Cursor = () => {
       });
       document.body.style.cursor = "auto";
     };
-  }, [x, y, scale]);
+  }, [disabled, x, y, scale]);
 
   return (
     <motion.div
@@ -65,6 +93,7 @@ const Cursor = () => {
         scale,
         background,
         mixBlendMode: "difference",
+        display: disabled ? "none" : "block",
       }}
     />
   );
