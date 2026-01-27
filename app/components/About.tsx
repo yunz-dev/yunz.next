@@ -6,9 +6,17 @@ export default function About() {
       <div className="max-w-3xl mx-auto">
         <FadeScroll>
           <h2 className="text-3xl font-semibold mb-4">About Me</h2>
-           <p className="text-lg text-gray-400">
-             Hi, I&apos;m Yunus. I&apos;m a backend engineer fascinated by what happens under the hood. I specialise in building reliable, high-performance systems using Go, Python, and Rust, with a focus on distributed architecture and cloud infrastructure. I love solving complex concurrency problems and contributing to the open-source ecosystem.
-           </p>
+          <p className="text-lg text-gray-400">
+            Hi, I’m Yunus. I’m a backend engineer fascinated by what happens under the hood.
+          </p>
+          <br></br>
+          <p className="text-lg text-gray-400">
+            I spend much of my free time exploring lower-level systems topics such as operating systems, concurrency, and performance internals - currently working on my own implementation of EGOS-2000 (Cornell).
+          </p>
+          <br></br>
+          <p className="text-lg text-gray-400">
+            I also volunteer within student engineering communities, helping run technical workshops, mentoring peers, and contributing to open-source projects.
+          </p>
         </FadeScroll>
       </div>
     </section>

@@ -12,8 +12,23 @@ const Cursor = () => {
   const background = useTransform(scale, [1, 2], ["#fff", "#fff"]);
 
   useEffect(() => {
+    const isTouch =
+      typeof window !== "undefined" &&
+      ("ontouchstart" in window ||
+        navigator.maxTouchPoints > 0 ||
+        // @ts-expect-error older Safari
+        navigator.msMaxTouchPoints > 0);
+
+    const isSmallScreen =
+      typeof window !== "undefined" &&
+      window.matchMedia?.("(max-width: 768px)").matches;
+
+    if (isTouch || isSmallScreen) {
+      document.body.style.cursor = "auto";
+      return;
+    }
+
     const handleMouseMove = (e: MouseEvent) => {
-      // Offset by half of cursor size (24px / 2 = 12px)
       x.set(e.clientX - 12);
       y.set(e.clientY - 12);
     };
@@ -22,7 +37,9 @@ const Cursor = () => {
     const handleMouseLeave = () => scale.set(1);
 
     window.addEventListener("mousemove", handleMouseMove);
-    document.querySelectorAll("a, button").forEach((el) => {
+
+    const targets = Array.from(document.querySelectorAll("a, button"));
+    targets.forEach((el) => {
       el.addEventListener("mouseenter", handleMouseEnter);
       el.addEventListener("mouseleave", handleMouseLeave);
     });
@@ -31,7 +48,7 @@ const Cursor = () => {
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
-      document.querySelectorAll("a, button").forEach((el) => {
+      targets.forEach((el) => {
         el.removeEventListener("mouseenter", handleMouseEnter);
         el.removeEventListener("mouseleave", handleMouseLeave);
       });
@@ -41,7 +58,7 @@ const Cursor = () => {
 
   return (
     <motion.div
-      className="fixed top-0 cursor-none left-0 w-6 h-6 rounded-full pointer-events-none z-[9999]"
+      className="fixed top-0 left-0 w-6 h-6 rounded-full pointer-events-none z-[9999]"
       style={{
         x: springX,
         y: springY,
